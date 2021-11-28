@@ -77,11 +77,7 @@ public class FollowScript : MonoBehaviour
         {
             followPlayer();
         }
-        else
-        {
-            Vector3 newPos = RandomNavSphere(transform.position, Radius, -1);
-            nma.SetDestination(newPos);
-        }
+
         if(timer >= 0)
         {
             timer -= Time.deltaTime;

@@ -1,1 +1,28 @@
-Milkshake camera shaker
+﻿This file is to credit all the assets that are used within the game. All of these assets are allowed to be used and modified, royalty free.
+
+Sound Effects
+Human Heartbeat by Daniel Simionn - Soundbible - https://soundbible.com/2162-Human-Heartbeat.html
+Termites and Ants by Mike Koenig - Soundbible - https://soundbible.com/2113-Termites-and-Ants.html
+Night sounds and crickets by Lisa Redfern - Soundbible - https://soundbible.com/2083-Crickets-Chirping-At-Night.html
+Realistic punch by Mark DiAngelo - Soundbible - https://soundbible.com/2069-Realistic-Punch.html
+Slow heart beat by Mike Koenig - Soundbible - https://soundbible.com/1612-Slow-HeartBeat.html
+Bounce by Mike Koenig - Soundbible -  https://soundbible.com/1120-Bounce.html
+Footsteps on cement by Tim Fryer - Soundbible - https://soundbible.com/2057-Footsteps-On-Cement.html
+
+Music
+Alone with the darkness by NaturesEyes - https://pixabay.com/music/mystery-alone-with-the-darkness-9859/
+
+Models
+All models were taken from the same website Maximo.com, which allows for royalty free 3D models
+Names of models from site
+
+Douglass - https://www.mixamo.com/#/?page=1&type=Character
+Chad -  ​​https://www.mixamo.com/#/?page=2&type=Character
+Alex - https://www.mixamo.com/#/?page=1&query=Agents&type=Character
+
+
+Animations
+All animations were taken from the same website, Maximo.com, which allow for royalty free animations on 3D models
+
+Fast Run - https://www.mixamo.com/#/?page=1&query=Fast+run+&type=Motion%2CMotionPack
+Walking - https://www.mixamo.com/#/?page=1&query=Walking&type=Motion%2CMotionPack
