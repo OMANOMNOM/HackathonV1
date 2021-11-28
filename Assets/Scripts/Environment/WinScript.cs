@@ -10,7 +10,7 @@ public class WinScript : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            player.transform.position = SendPlayerTo.transform.position;
+            player.WinObjectsDisplay();
         }
     }
 }
