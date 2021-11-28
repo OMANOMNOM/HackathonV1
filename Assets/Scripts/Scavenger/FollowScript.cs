@@ -115,7 +115,6 @@ public class FollowScript : MonoBehaviour
         }
     }
 
-
     public static Vector3 RandomNavSphere(Vector3 origin, float distance, int layermask)
     {
         Vector3 randomDirection = UnityEngine.Random.insideUnitSphere * distance;

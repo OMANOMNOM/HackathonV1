@@ -8,6 +8,7 @@ TagManager:
   - ToxicZone
   - Win
   - Cure
+  - Enemy
   layers:
   - Default
   - TransparentFX
