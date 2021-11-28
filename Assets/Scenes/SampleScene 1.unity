@@ -552,8 +552,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 104816357}
-  - component: {fileID: 104816360}
-  - component: {fileID: 104816359}
   - component: {fileID: 104816358}
   - component: {fileID: 104816361}
   - component: {fileID: 104816362}
@@ -593,55 +591,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &104816359
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104816356}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: d76d5dba59c8a824a8170635648a356c, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &104816360
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104816356}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!54 &104816361
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8157,8 +8106,9 @@ MonoBehaviour:
   PauseObjects: {fileID: 1294966831}
   SFXAudioSource: {fileID: 404529248}
   volume: 0.5
-  JumpSFX: {fileID: 0}
-  DoubleJumpSFX: {fileID: 0}
+  JumpSFX: {fileID: 8300000, guid: 1d14604cba099e9409d31ae3bb669747, type: 3}
+  SlowHeartSFX: {fileID: 8300000, guid: 6d76661165cd94e458ed32a74e7116e3, type: 3}
+  FastHeartSFX: {fileID: 8300000, guid: 6e16a3fa131679d4798e40389e40ce1c, type: 3}
   particles: {fileID: 404529250}
   IsInToxic: 0
   HealthTick: 0.5
@@ -8170,6 +8120,10 @@ MonoBehaviour:
   DeadObjects: {fileID: 646202091}
   WinObjects: {fileID: 1602583744}
   ap: {fileID: 653260037}
+  Enemy1: {fileID: 1228964582}
+  Enemy2: {fileID: 544622282}
+  Enemy3: {fileID: 1286534074}
+  Proximity: 5
 --- !u!82 &404529248
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8181,10 +8135,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 1632795928956580185, guid: 4f59de47d2da4ae46bd118360310c565, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

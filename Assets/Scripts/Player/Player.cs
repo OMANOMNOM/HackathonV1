@@ -38,7 +38,10 @@ public class Player : MonoBehaviour
 
     [Header("Audioclips")]
     public AudioClip JumpSFX;
-    public AudioClip DoubleJumpSFX;
+    public bool PlayingFast;
+    public bool PlayingSlow;
+    public AudioClip SlowHeartSFX;
+    public AudioClip FastHeartSFX;
 
     [Header("Particles")]
     public ParticleSystem particles;
@@ -63,6 +66,12 @@ public class Player : MonoBehaviour
     [Header("Alter Post Processing")]
     public AlterPost ap;
 
+    [Header("Enemies")]
+    public GameObject Enemy1;
+    public GameObject Enemy2;
+    public GameObject Enemy3;
+    public float Proximity;
+
     public void Awake()
     {
         Time.timeScale = 1;
@@ -71,6 +80,7 @@ public class Player : MonoBehaviour
     public void Start()
     {
         rb = GetComponent<Rigidbody>();
+        PlaySlowHeartBeat();
     }
 
     private void FixedUpdate()
@@ -107,16 +117,6 @@ public class Player : MonoBehaviour
 
         OnGround = Physics.Raycast((new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 1f, gameObject.transform.position.z)), Vector3.down, 3f, 1 << LayerMask.NameToLayer("Floor"));
         // raycast down to look for ground is not detecting ground? only works if allowing jump when grounded = false; // return "Ground" layer as layer
-
-        if (Movement.magnitude != 0)
-        {
-            //SFXAudioSource.Play() -> play walk moving sfx;
-        }
-
-        if (Movement.magnitude == 0)
-        {
-            //SFXAudioSource.Stop() -> stop walk moving sfx;
-        }
 
         // Rotate Player
 
@@ -325,12 +325,13 @@ public class Player : MonoBehaviour
 
     private void PlayJumpSound()
     {
-        //SFXAudioSource.PlayOneShot(JumpSFX, volume);
+        SFXAudioSource.PlayOneShot(JumpSFX, volume);
     }
 
     private void PlayDoubleJumpSound()
     {
-        //SFXAudioSource.PlayOneShot(DoubleJumpSFX, volume);
+        SFXAudioSource.PlayOneShot(JumpSFX, volume);
+        SFXAudioSource.PlayOneShot(JumpSFX, volume);
     }
 
     IEnumerator HealthMinus()
@@ -388,5 +389,17 @@ public class Player : MonoBehaviour
     public void Damage(int damage)
     {
         Health -= damage;
+    }
+
+    public void PlaySlowHeartBeat()
+    {
+        SFXAudioSource.clip = SlowHeartSFX;
+        SFXAudioSource.Play();
+    }
+
+    public void PlayFastHeartBeat()
+    {
+        SFXAudioSource.clip = FastHeartSFX;
+        SFXAudioSource.Play();
     }
 }
