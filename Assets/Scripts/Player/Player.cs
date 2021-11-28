@@ -374,6 +374,7 @@ public class Player : MonoBehaviour
             if(isRadiated == true)
             {
                 isRadiated = false;
+                Destroy(other.gameObject);
             }
         }
 
