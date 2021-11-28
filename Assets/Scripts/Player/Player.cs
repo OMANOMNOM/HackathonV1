@@ -105,7 +105,7 @@ public class Player : MonoBehaviour
             rb.velocity = new Vector3(ClampedSpeed.x, rb.velocity.y, ClampedSpeed.y);
         }
 
-        OnGround = Physics.Raycast((new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 1f, gameObject.transform.position.z)), Vector3.down, 2f, 1 << LayerMask.NameToLayer("Floor"));
+        OnGround = Physics.Raycast((new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 1f, gameObject.transform.position.z)), Vector3.down, 3f, 1 << LayerMask.NameToLayer("Floor"));
         // raycast down to look for ground is not detecting ground? only works if allowing jump when grounded = false; // return "Ground" layer as layer
 
         if (Movement.magnitude != 0)
