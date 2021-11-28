@@ -18,9 +18,9 @@ public class news : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        if (time > 1)
+        if (time > 2)
             time = 0.0f;
-        curHeight = baseHeight + Mathf.Sin(time);
+        curHeight = baseHeight + Mathf.Sin( time  );
         transform.position = new Vector3(transform.position.x, curHeight, transform.position.z);
     }
 }
