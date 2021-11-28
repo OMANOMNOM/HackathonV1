@@ -376,6 +376,16 @@ public class Player : MonoBehaviour
                 isRadiated = false;
             }
         }
+
+        if (other.CompareTag("Enemy"))
+        {
+            if (PlayingFast == false)
+            {
+                PlayingSlow = false;
+                PlayingFast = true;
+                PlayFastHeartBeat();
+            }
+        }
     }
 
     public void OnTriggerExit(Collider other)
@@ -385,6 +395,15 @@ public class Player : MonoBehaviour
             InCourotine = false;
             IsInToxic = false;
             StopCoroutine(HealthMinus());
+        }
+        if (other.CompareTag("Enemy"))
+        {
+            if (PlayingSlow == false)
+            {
+                PlayingSlow = true;
+                PlayingFast = true;
+                PlaySlowHeartBeat();
+            }
         }
     }
 
