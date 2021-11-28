@@ -384,4 +384,9 @@ public class Player : MonoBehaviour
             StopCoroutine(HealthMinus());
         }
     }
+
+    public void Damage(int damage)
+    {
+        Health -= damage;
+    }
 }
