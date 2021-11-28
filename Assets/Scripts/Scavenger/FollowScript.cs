@@ -7,6 +7,7 @@ public class FollowScript : MonoBehaviour
     // Start is called before the first frame update
     public Player player;
     private NavMeshAgent nma;
+    private Animator anim;
     private Rigidbody rb;
     public Rigidbody playerRb;
     public float maxViewDistance = 5;
@@ -31,6 +32,7 @@ public class FollowScript : MonoBehaviour
     void Start()
     {
         wandertimer = timer;
+        anim = GetComponent<Animator>();
         nma = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
         enemyTransform = GetComponent<Transform>();
@@ -71,6 +73,7 @@ public class FollowScript : MonoBehaviour
         else
         {
             ischasing = false;
+            anim.SetBool("FoundPlayer", false);
         }
 
         if (ischasing == true)
@@ -99,6 +102,7 @@ public class FollowScript : MonoBehaviour
         enemyTransform.position += enemyTransform.forward * speed * Time.deltaTime;
         */
         ischasing = true;
+        anim.SetBool("FoundPlayer", true);
         nma.SetDestination(player.transform.position);
     }
 

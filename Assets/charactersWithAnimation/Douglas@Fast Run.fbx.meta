@@ -5,13 +5,133 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: mixamo.com
-  externalObjects: {}
+    second: Fast Run
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bodymat
+    second: {fileID: 2100000, guid: a519a2db983d7ee45a7bce10bd652475, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bottommat
+    second: {fileID: 2100000, guid: ef86afd81b4ce0845a475cd2c0faabb0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shoesmat
+    second: {fileID: 2100000, guid: e8696fa646bc26246b7cfbab39ed97d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Topmat
+    second: {fileID: 2100000, guid: 1c1151e8ff93a2e4c81176821c45d24f, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Douglas_Body_Diffuse
+    second: {fileID: 2800000, guid: 3b4ee53c55802474f8b967ee5192aa51, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Douglas_Body_Gloss
+    second: {fileID: 2800000, guid: c2985d144b3250f48afc15a8f75f765e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Douglas_Body_Normal
+    second: {fileID: 2800000, guid: f8da7af504312e742948d2a8189499cb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Douglas_Body_Opacity
+    second: {fileID: 2800000, guid: dca2660863380474e880f28bf4708c09, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Douglas_Body_Specular
+    second: {fileID: 2800000, guid: dde0153d0ef554b4097c0f86e26d9f42, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Douglas_Bottom_Diffuse
+    second: {fileID: 2800000, guid: f6db94335038b024c98674004385f488, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Douglas_Bottom_Gloss
+    second: {fileID: 2800000, guid: 69e7695196b5eba4c894e63ab46a003d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Douglas_Bottom_Normal
+    second: {fileID: 2800000, guid: aa802ae3cc2d7b04298d86b27836fb6c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Douglas_Bottom_Opacity
+    second: {fileID: 2800000, guid: 3e99f560b1889dc4e972dd9173ff8c9b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Douglas_Bottom_Specular
+    second: {fileID: 2800000, guid: 0741267be867e8344b0ec88ad2e88883, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Douglas_Shoes_Diffuse
+    second: {fileID: 2800000, guid: 828a7823370938844b22e1ed5284c978, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Douglas_Shoes_Gloss
+    second: {fileID: 2800000, guid: 6cd8637cead3ef646bed96b73c2a2a08, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Douglas_Shoes_Normal
+    second: {fileID: 2800000, guid: fbc4b209695e02a4293b4e98ebdad6f4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Douglas_Shoes_Opacity
+    second: {fileID: 2800000, guid: ff361970cbc2e8440a93339b3d486b2d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Douglas_Shoes_Specular
+    second: {fileID: 2800000, guid: 774114a0b3c031d4a9593f9156ed3560, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Douglas_Top_Diffuse
+    second: {fileID: 2800000, guid: 1b48911bea78b1e479205531f0855bc9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Douglas_Top_Gloss
+    second: {fileID: 2800000, guid: cbdd1de268b8cf74ba9b7487280dc3c2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Douglas_Top_Normal
+    second: {fileID: 2800000, guid: 69f6370445c28444b9f8ef016b9eb605, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Douglas_Top_Opacity
+    second: {fileID: 2800000, guid: db1d9e7d4afa1ce46818491b6525530d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Douglas_Top_Specular
+    second: {fileID: 2800000, guid: c652416bb33b07f4dbf623c91644456e, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -33,7 +153,36 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Fast Run
+      takeName: mixamo.com
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []

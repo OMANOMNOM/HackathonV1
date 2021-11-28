@@ -5,8 +5,63 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: mixamo.com
-  externalObjects: {}
+    second: Fast Run
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ch16_Body
+    second: {fileID: 2100000, guid: f0e4c82e3609ab04fa06280ef835b6d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ch16_body1
+    second: {fileID: 2100000, guid: 1185bf953ef3b0241b33f9d6c918d2da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ch16_eyelashes
+    second: {fileID: 2100000, guid: ffdc365e2e2f88444a011786e7608a42, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch16_1001_Diffuse
+    second: {fileID: 2800000, guid: 179335a91824c464ca69ad976bc6c843, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch16_1001_Glossiness
+    second: {fileID: 2800000, guid: 867c6ccb72cb9214898e40a285769c61, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch16_1001_Normal
+    second: {fileID: 2800000, guid: 1b4d99985b55d4749a0b9bd50a4522c3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch16_1001_Specular
+    second: {fileID: 2800000, guid: 7df7ba45be7cad2448a526becd5319e5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch16_1002_Diffuse
+    second: {fileID: 2800000, guid: 36aa31da4ebb7c946b4bcffdce5fcdba, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch16_1002_Glossiness
+    second: {fileID: 2800000, guid: 6602079720f1ffb4298a4bececb6f051, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch16_1002_Normal
+    second: {fileID: 2800000, guid: 296a78dd210d3d343b3f01a11cd7da0b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch16_1002_Specular
+    second: {fileID: 2800000, guid: a589d697a6a368b459308be38ce3caf8, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -33,7 +88,36 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Fast Run
+      takeName: mixamo.com
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
