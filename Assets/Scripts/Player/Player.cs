@@ -241,6 +241,8 @@ public class Player : MonoBehaviour
         {
             ap.NotRadiated();
         }
+
+
     }
 
     //gameplay functions
